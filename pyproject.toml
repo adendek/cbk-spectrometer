@@ -9,6 +9,7 @@ dependencies = [
     "nicegui>=3.16.0",
     "pyinstaller>=6.22.2",
     "pyvisa>=1.16.2",
+    "pywebview>=6.2.1",
 ]
 
 [project.scripts]

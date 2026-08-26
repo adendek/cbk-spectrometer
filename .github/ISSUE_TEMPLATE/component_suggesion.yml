@@ -1,0 +1,58 @@
+name: Tool / Component Proposal
+description: Propose a new reusable tool or component for the DAAAI Platform.
+title: "[Proposal]: <Tool Name>"
+labels: ["proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a new reusable component! 
+        Please fill out the fields below to provide enough context for the team and maintainers to discuss and evaluate the idea.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem Statement & Tool Description
+      description: What is the general description of the tool? What problem does it solve, and why do we need it?
+      placeholder: Describe the current pain point and how this tool will resolve it...
+    validations:
+      required: true
+
+  - type: textarea
+    id: prior-implementation
+    attributes:
+      label: Prior Implementation
+      description: Is some part of this already implemented? If yes, where?
+      placeholder: e.g., "We currently have a script in the XYZ repository that does 80% of this..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tech-stack
+    attributes:
+      label: Tech Stack
+      description: What is the proposed primary technology stack for this component?
+      options:
+        - General Python Library
+        - Custom / Other (Please specify in the description above)
+    validations:
+      required: true
+
+  - type: textarea
+    id: cloud-components
+    attributes:
+      label: Cloud Components & Infrastructure
+      description: What cloud services or infrastructure will be needed to run this component? Does it need anything specific?
+      placeholder: e.g., AWS Lambda, S3 buckets, specific IAM roles, Databricks cluster...
+    validations:
+      required: true
+
+  - type: textarea
+    id: effort
+    attributes:
+      label: Development and Maintenance Effort
+      description: What is your estimation for the effort required to build this tool, and what will it take to maintain it long-term?
+      placeholder: e.g., "Development ~2 sprints for 1 engineer. Maintenance low, mostly dependency updates."
+    validations:
+      required: true
+ 
